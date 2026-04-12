@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+transformers
+torch
+omegaconf
+python-multipart
+python-docx
+pypdf
+requests
