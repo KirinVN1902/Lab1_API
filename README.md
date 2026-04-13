@@ -56,7 +56,6 @@ VD:Status: 200
 }<br>
 Đáng chú ý, phần "summary" trong "prediction" sẽ là phần tóm tắt văn bản.<br>
 ## 7. Video Demo:
-<video src="https://github.com/KirinVN1902/Lab1_API/blob/main/Video_API.mp4" controls="controls" muted="muted" width="100%">
-</video>
+![Demo Video](Video_API.mp4)
 
 
