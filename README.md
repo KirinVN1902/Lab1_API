@@ -35,11 +35,11 @@ Chọn POST /predict -> Try it out. Trong phần Request body, tại mục file,
 Cách 4: Trong file test_api.py, dán đoạn văn bản vào mục sample_text rồi gõ dòng lệnh sau trong terminal: py test_api.py<br>
 Lưu ý: Nếu chạy bằng cách 1 hoặc cách 3, file được gửi có thể ở định dạng .txt, .docx, .pdf .<br>
 ## 6. Ví dụ về response:
-- GET/: Trả về thông tin cơ bản:
- VD: {"system":"FastAPI + Hugging Face Text Summarization API","description":"Tóm tắt văn bản bằng mô hình AI trên Hugging Face.","main_features":["Nhận file văn bản từ người dùng","Tóm tắt nội dung bằng facebook/bart-large-cnn","Trả kết quả dưới dạng JSON"],"version":"1.0"}
-- GET /health: Trả về tình trạng hoạt động
-VD: {"status":"ok","uptime_s":7267.957,"model_id":"facebook/bart-large-cnn","model_loaded":true}
-- POST /predict: Trả về cấu trúc JSON bao gồm trạng thái xử lý, thông tin dữ liệu...
+- GET/: Trả về thông tin cơ bản:<br>
+ VD: {"system":"FastAPI + Hugging Face Text Summarization API","description":"Tóm tắt văn bản bằng mô hình AI trên Hugging Face.","main_features":["Nhận file văn bản từ người dùng","Tóm tắt nội dung bằng facebook/bart-large-cnn","Trả kết quả dưới dạng JSON"],"version":"1.0"}<br>
+- GET /health: Trả về tình trạng hoạt động<br>
+VD: {"status":"ok","uptime_s":7267.957,"model_id":"facebook/bart-large-cnn","model_loaded":true}<br>
+- POST /predict: Trả về cấu trúc JSON bao gồm trạng thái xử lý, thông tin dữ liệu...<br>
 VD:Status: 200
 {
   "status": "ok",
