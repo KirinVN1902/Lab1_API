@@ -56,6 +56,6 @@ VD:Status: 200
 }<br>
 Đáng chú ý, phần "summary" trong "prediction" sẽ là phần tóm tắt văn bản.<br>
 ## 7. Video Demo:
-[![Video demo API](https://www.youtube.com/watch?v=zEJ5e7QwoR0)
+[![Video demo API]](https://www.youtube.com/watch?v=zEJ5e7QwoR0)
 
 
