@@ -13,27 +13,27 @@
 
 ## 3. Hướng dẫn cài đặt thư viện
 - Python: 3.8+
-- Cài đặt các thư viện trong file requirements.txt: Chạy lệnh sau trên terminal: pip install -r requirements.txt
+- Cài đặt các thư viện trong file requirements.txt: Chạy lệnh sau trên terminal: <br>pip install -r requirements.txt
 
 ## 4. Hướng dẫn chạy chương trình
 - Phải cài đặt sẵn các thư viện trước.
 - Sau đó, chạy lệnh: uvicorn main:app --reload
-- Kiểm tra nhanh: Mở trình duyệt và nhập đường link: http://127.0.0.1:8000/docs. 
+- Kiểm tra nhanh: Mở trình duyệt và nhập đường link: http://127.0.0.1:8000/docs. <br>
 Khi đó, sẽ được dẫn vào Swagger UI, có thể thử ngay API trên trang đó.
 
 ## 5. Hướng dẫn gọi API:
 - GET/: Trên terminal, gõ lệnh: curl.exe 127.0.0.1:8000/ hoặc truy cập URL 127.0.0.1:8000/ trên trình duyệt để trả về thông tin cơ bản của API.
 - GET /health: Trên terminal, gõ lệnh: curl.exe 127.0.0.1:8000/health hoặc truy cập URL 127.0.0.1:8000/health để kiểm tra trạng thái hoạt động.
-- POST /predict:
-+ Cách 1: Trên terminal, gõ lệnh:
-curl.exe -X POST "127.0.0.1:8000/predict" \ -F "file=@(path_to_document)"
-+ Cách 2: Trên terminal, gõ lệnh:
-curl.exe -X POST "127.0.0.1:8000/predict" \ -F "text=(paragraph)"
-+ Cách 3: Trên trình duyệt, truy cập:
-http://127.0.0.1:8000/docs
-Chọn POST /predict -> Try it out. Trong phần Request body, tại mục file, chọn Choose File -> Chọn file cần tóm tắt trong máy -> Execute.
-+ Cách 4: Trong file test_api.py, dán đoạn văn bản vào mục sample_text rồi gõ dòng lệnh sau trong terminal: py test_api.py
-Lưu ý: Nếu chạy bằng cách 1 hoặc cách 3, file được gửi có thể ở định dạng .txt, .docx, .pdf .
+- POST /predict: <br>
+Cách 1: Trên terminal, gõ lệnh:
+curl.exe -X POST "127.0.0.1:8000/predict" \ -F "file=@(path_to_document)"<br>
+Cách 2: Trên terminal, gõ lệnh:<br>
+curl.exe -X POST "127.0.0.1:8000/predict" \ -F "text=(paragraph)"<br>
+Cách 3: Trên trình duyệt, truy cập:<br>
+http://127.0.0.1:8000/docs<br>
+Chọn POST /predict -> Try it out. Trong phần Request body, tại mục file, chọn Choose File -> Chọn file cần tóm tắt trong máy -> Execute.<br>
++ Cách 4: Trong file test_api.py, dán đoạn văn bản vào mục sample_text rồi gõ dòng lệnh sau trong terminal: py test_api.py<br>
+Lưu ý: Nếu chạy bằng cách 1 hoặc cách 3, file được gửi có thể ở định dạng .txt, .docx, .pdf .<br>
 ## 6. Ví dụ về response:
 - GET/: Trả về thông tin cơ bản:
  VD: {"system":"FastAPI + Hugging Face Text Summarization API","description":"Tóm tắt văn bản bằng mô hình AI trên Hugging Face.","main_features":["Nhận file văn bản từ người dùng","Tóm tắt nội dung bằng facebook/bart-large-cnn","Trả kết quả dưới dạng JSON"],"version":"1.0"}
