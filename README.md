@@ -32,7 +32,7 @@ curl.exe -X POST "127.0.0.1:8000/predict" \ -F "text=(paragraph)"<br>
 Cách 3: Trên trình duyệt, truy cập:<br>
 http://127.0.0.1:8000/docs<br>
 Chọn POST /predict -> Try it out. Trong phần Request body, tại mục file, chọn Choose File -> Chọn file cần tóm tắt trong máy -> Execute.<br>
-+ Cách 4: Trong file test_api.py, dán đoạn văn bản vào mục sample_text rồi gõ dòng lệnh sau trong terminal: py test_api.py<br>
+Cách 4: Trong file test_api.py, dán đoạn văn bản vào mục sample_text rồi gõ dòng lệnh sau trong terminal: py test_api.py<br>
 Lưu ý: Nếu chạy bằng cách 1 hoặc cách 3, file được gửi có thể ở định dạng .txt, .docx, .pdf .<br>
 ## 6. Ví dụ về response:
 - GET/: Trả về thông tin cơ bản:
@@ -53,7 +53,7 @@ VD:Status: 200
   "prediction": {
     "summary": "The global COVID-19 pandemic began with an outbreak in Wuhan, China, in December 2019. It spread to other parts of Asia and then worldwide in early 2020. The World Health Organization declared the outbreaka public health emergency of international concern (PHEIC) on 30 January 2020."
   }
-}
+}<br>
 Đáng chú ý, phần "summary" trong "prediction" sẽ là phần tóm tắt văn bản.
 
 
