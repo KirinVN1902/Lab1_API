@@ -13,8 +13,7 @@
 
 ## 3. Hướng dẫn cài đặt thư viện
 - Python: 3.8+
-- Cài đặt các thư viện trong file requirements.txt: Chạy lệnh sau trên terminal
-pip install -r requirements.txt
+- Cài đặt các thư viện trong file requirements.txt: Chạy lệnh sau trên terminal: pip install -r requirements.txt
 
 ## 4. Hướng dẫn chạy chương trình
 - Phải cài đặt sẵn các thư viện trước.
