@@ -54,7 +54,8 @@ VD:Status: 200
     "summary": "The global COVID-19 pandemic began with an outbreak in Wuhan, China, in December 2019. It spread to other parts of Asia and then worldwide in early 2020. The World Health Organization declared the outbreaka public health emergency of international concern (PHEIC) on 30 January 2020."
   }
 }<br>
-Đáng chú ý, phần "summary" trong "prediction" sẽ là phần tóm tắt văn bản.
-
+Đáng chú ý, phần "summary" trong "prediction" sẽ là phần tóm tắt văn bản.<br>
+## 7. Video Demo:
+<video src="Video_API.mp4" controls="controls" style="max-width: 100%;"></video>
 
 
